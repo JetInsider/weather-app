@@ -1,0 +1,108 @@
+:root{
+    --background-color: rgb(21, 39, 56);
+    --primary-color: rgb(227, 241, 255);
+    --secondary-color: rgb(136, 189, 242); 
+}
+
+*{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Merriweather", serif;
+    color: white;
+    background-color: var(--background-color);
+}
+
+h1{
+    margin: 25px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+#wrapper{
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    max-width: 350px;
+    margin: 100px auto;
+    margin-top: 40px;
+}
+
+#search-area{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search-area input{
+    font: inherit;
+    padding: 4px;
+    padding-left: 8px;
+    text-align: left;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+#search-btn{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+#main-area{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease, opacity 1.2s ease;
+    opacity: 0;
+}
+
+#main-area.show{
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.weather-images{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.temperature{
+    color: rgb(18, 18, 18);
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.place{
+    font-size: 35px;
+}
+
+.addi-info{
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.addi-info-data{
+    font-weight: 600;
+    font-size: 0.8rem;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.addi-info-data .values{
+    font-size: 1rem;
+}
+
+.addi-info-data svg{
+    margin-right: 5px;
+}
