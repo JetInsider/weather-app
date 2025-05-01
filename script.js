@@ -1,7 +1,7 @@
-const apiKey = "56f4a4dac3f9a06314d5263fecb00e7e";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric";
 const tempEle = document.querySelector('.temperature');
 const windEle = document.getElementById('windSpeedVal');
+const apiKey = "56f4a4dac3f9a06314d5263fecb00e7e";
 const humidityEle = document.getElementById('humidityVal');
 const placeNameEle = document.querySelector('.place')
 
